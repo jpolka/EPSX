@@ -17,8 +17,8 @@ if (isClient) {
   const store = configureStore(window.__INITIAL_STATE__);
   ga.initialize('UA-83907076-1');
   function logPageView() {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
+    ga.set({ page: window.location.pathname });
+    ga.pageview(window.location.pathname);
   }
 
   ReactDOM.render(
