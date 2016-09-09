@@ -25,8 +25,7 @@ module.exports = {
         test: /\.js?/,
         loader: 'babel',
         include: [
-          path.join(__dirname, 'app'),
-          path.join(__dirname, 'static')
+          path.join(__dirname, 'app')
         ],
         query: {
           plugins: [
