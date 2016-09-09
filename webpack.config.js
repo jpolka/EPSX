@@ -7,7 +7,7 @@ module.exports = {
   devtool: '#source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './app/index.js'
+    './app/index.js',
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -24,7 +24,10 @@ module.exports = {
       {
         test: /\.js?/,
         loader: 'babel',
-        include: path.join(__dirname, 'app'),
+        include: [
+          path.join(__dirname, 'app'),
+          path.join(__dirname, 'static')
+        ],
         query: {
           plugins: [
             ['react-transform', {
@@ -40,7 +43,7 @@ module.exports = {
           ]
         }
       },
-      { test: /\.scss$/, loader: 'style!css!sass'},
+      { test: /\.css$/, loader: 'style!css!sass'},
       { test: /\.svg$/,    loader: 'file-loader' },
       { test: /\.png$/,    loader: 'file-loader' },
       { test: /\.jpg$/,    loader: 'file-loader' },

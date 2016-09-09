@@ -36,21 +36,21 @@ export const Landing = React.createClass({
 
             <div className={'project'}>
               <h3><a href="https://www.pubpub.org">PubPub</a></h3>
-              <p>PubPub is</p>
+              <p>PubPub is a free and open tool for collaborative editing, instant publishing, continuous review, and grassroots journals.</p>
             </div>
 
             <div className={'project'}>
-              <h3><a href="#asd">DbDb</a></h3>
-              <p>DbDb is</p>
+              <h3><a href="https://www.pubpub.org/pub/dbdb">DbDb</a></h3>
+              <p>DbDb is a tool for forkable, traceable, and reproducible data analysis.</p>
             </div>
 
             <div className={'project'}>
-              <h3><a href="#asd">CiteHub</a></h3>
-              <p>CiteHub is</p>
+              <h3><a href="">CiteHub</a></h3>
+              <p>CiteHub is under developement</p>
             </div>
 
             <div className={'project'}>
-              <h3><a href="#asd">TYWB</a></h3>
+              <h3><a href="">TYWB</a></h3>
               <p>TYWB = Take Your Work Back (tywb.io and tywb.us are available)</p>
               <p>takeyourworkback.com and takebackyourwork.com are also available...</p>
             </div>

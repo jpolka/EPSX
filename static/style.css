@@ -24,10 +24,6 @@ body {
 /* Landing Page */
 /* ------- */
 .landing-header {	
-    /*background-image: url(./milky-way.jpg);*/
-    /*background-size: cover;*/
-    /*background-position: 50%;*/
-    /*min-height: 400px;*/
     padding: 1em 0em;
     font-size: 8em;
     font-weight: bold;
@@ -36,6 +32,7 @@ body {
 
 .landing-section {
 	max-width: 800px;
+	min-height: 250px;
 	margin: 0 auto;
 	z-index: 2;
 	position: relative;
