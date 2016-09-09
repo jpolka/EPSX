@@ -6,9 +6,11 @@
   "author": "EPSX Team",
   "license": "MIT",
   "scripts": {
+    "postinstall": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
     "start": "node server",
-    "start-prod": "npm run build && NODE_ENV=production PORT=3000 node server",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --config ./webpack.production.config.js --progress"
+    "start-prod": "NODE_ENV=production PORT=3000 node server",
+    "start-prod-local": "npm run build && NODE_ENV=production PORT=3000 node server",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
   "dependencies": {
     "babel-core": "^6.13.2",
