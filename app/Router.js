@@ -8,11 +8,14 @@ import routes from './Routes';
 import { Provider } from 'react-redux';
 import Root from './containers/Root';
 import configureStore from './configureStore';
+import ga from 'react-ga';
+
 
 const isClient = typeof document !== 'undefined';
 
 if (isClient) {
   const store = configureStore(window.__INITIAL_STATE__);
+  ga.initialize('UA-83907076-1');
 
   ReactDOM.render(
     <Provider store={store}>
