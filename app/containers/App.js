@@ -5,7 +5,9 @@ import Helmet from 'react-helmet';
 // import {getLoginData} from '../actions/app';
 import AppNav from '../components/AppNav';
 
-import '../../static/style.css';
+if (process.env.NODE_ENV !== 'production') {
+  require('../../static/style.css');
+}
 
 export const App = React.createClass({
 

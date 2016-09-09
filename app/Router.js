@@ -16,10 +16,14 @@ const isClient = typeof document !== 'undefined';
 if (isClient) {
   const store = configureStore(window.__INITIAL_STATE__);
   ga.initialize('UA-83907076-1');
+  function logPageView() {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }
 
   ReactDOM.render(
     <Provider store={store}>
-      <Router history={browserHistory} routes={routes} render={applyRouterMiddleware(useScroll())}/>
+      <Router history={browserHistory} routes={routes} onUpdate={logPageView} render={applyRouterMiddleware(useScroll())}/>
     </Provider>,
     document.getElementById('root')
   );
