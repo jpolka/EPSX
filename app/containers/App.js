@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import Helmet from 'react-helmet';
 // import {getLoginData} from '../actions/app';
 import AppNav from '../components/AppNav';
-import './style.scss';
+// import './style.scss';
 
 export const App = React.createClass({
 
