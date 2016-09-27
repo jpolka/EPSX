@@ -28,7 +28,7 @@ export const Landing = React.createClass({
           <div id="projects-background-color" className="landing-background"></div>
 
           <div id="projects" className={'landing-section'}>
-            <div className={'section-header'}>Projects</div>
+            <div className={'section-header'}>Participants' projects</div>
             <div className={'project'}>
               <h3><a href="http://asapbio.org/">ASAPBio</a></h3>
               <p>ASAPbio was created as a focal point for engaging the biology community in a discussion about the role that preprints (see video below) could play in communicating results in the life sciences.</p>
